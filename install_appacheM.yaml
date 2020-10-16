@@ -1,0 +1,59 @@
+---
+- name: Install Apache Web Server
+  hosts: host1
+  become: yes
+
+  vars:
+          src_file: ./index.txt
+          dst_file: /var/www/html
+
+  tasks:
+          - block:
+            - name: Install Apache for APT
+              apt:
+                      name: apache2
+                      state: present
+                      update_cache: yes
+
+            - name: Start and Enable
+              service:
+                      name: apache2
+                      state: started
+                      enabled: yes
+
+            when: ansible_pkg_mgr == 'apt'
+          
+          - block: 
+            - name: Install Apache for YUM
+              yum:
+                      name: httpd
+                      state: present
+
+            - name: Start and Enable
+              service:
+                      name: httpd
+                      state: started
+                      enabled: yes
+
+            when: ansible_pkg_mgr == 'yum'
+          
+          - name: Copy file
+            copy:
+              src: "{{ src_file }}"
+              dest: "{{ dst_file }}"
+              mode: 0555
+            notify: Restart Apache {{ ansible_pkg_mgr }}
+
+
+  handlers:
+    - name: Restart Apache apt
+      service:
+              name: apache2
+              state: restarted
+
+    - name: Restart Apache yum
+      service:
+              name: httpd
+              state: restarted
+
+
