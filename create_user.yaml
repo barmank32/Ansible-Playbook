@@ -1,0 +1,20 @@
+---
+- name: Test connection to my server
+  hosts: host1
+  become: yes
+
+  tasks:
+          - name: Create a login user
+            user:
+                    name: barmank
+                    password: "$6$znRfo31qT/6iiH$CAFftMtMfNbtok0D3T4AFaSqc3wpMOUdK5Gf8AUsZ.jCtH70XwdJ.vSSTwNg7DM2r78/kOrTIytakUq6Dn1Jh."
+                    # mkpasswd --method=sha-512
+                    groups: # Empty by default, here we give it some groups
+                    #       - docker
+                    #       - sudo
+                    state: present
+                    shell: /bin/bash       # Defaults to /bin/bash
+                    system: no             # Defaults to no
+                    createhome: yes        # Defaults to yes
+                    home: /home/barmank    # Defaults to /home/<usernam
+
