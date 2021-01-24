@@ -1,7 +1,16 @@
 dist: xenial
 language: bash
-
 notifications:
   email: false
-  webhooks: 
-    - secure: "Kv4xT/TavVVN7f9/AWGUVyL0thBwaxNGdX5bkymyCkQsqv2xeDVGFkrs98yDY3701c041LJ/5WmUSAG5xSFc4XYJSREJ/zOnhkZpV3qM1YDynpVr9td8/ywkJSgmzK3pnQbshyb0ppPdgVO/lgRZIbgxPyTT49RDXLFC9CUqmDuAbvBV6znLio0ja8bkBk1v3UVO5u9APah3Smja+PvBakCMW9x0+MpTPdPms6q2GKYs2hVGhaSxTxxSMxURYhbUgvq5kQeNgEcAp1hACqL4sqA1dCnU7d/LSQi59ntGidJLHgOq6iVy4NiiYojRsRx/jgBWW0r8bH2Roo5HEGXMyqz5z1X/J/c5Ks8v3fxWDM/at/kvynOQOyTYeWJVZwXdT7l4YTEcU6Bc3GPfuaHIheS1EgKZR8PjOkiyE+Zc7Guqxx0iKpq2QQYbpPM3IGurIwgwt3Ps9joQOcmqRiOl4lP4XXgRKjUC1LPhGQ2FeBqQJ1ptVa/YR82iJj+H1KtuZt6WXmrBVXOp07YKr26DTXI6iW6OAo1IHDjUyiLexoee0NNzOfg5TspHTLBXmT9UCXTbNvC28gJ780blfyLMGjnBSFUqBKeZwe9kREuPevy0OEt3F6e4wouaFVD/syTDg7pCeIeSEjpss6Pqrq0223HADJpmcJjX8ZrcZnWryjw="
+  webhooks:
+    secure: SU+WUOwpM7OudhOFwRBSklh1FKU54tiAfqRWdIBlt5oFnBZd9h9F3cU74zOYNjaEruqQpCXVbSNSLLPjNwFdhfjJ1WkA/ThMr+X65IlFYuUXdyuj6sSLvS7Xd/fhOK6COHBvXNJwKwj68sr+JFrVmgoKCaXFWkYwqUZcFoPzoVUS32rgA7nG2UKAshK9b8lBmbfudbKb1GU4y0bmaGaI47lB4/nY7z/SgrN3JSMeL+MJvRa3HKhfSq+2EkSQ95hNEmNEuLs7N/2EQcdIsnLaH+6gXcxv6OoT/v7yPtsxXosiNTIFBoOOSeTiZRVd9IVZsuqtM7x7tNZ1TpA65Wj4DZ2anDwwhAePdO2uPL9qlkvZJlQQM/LIfzvC+K5t2MzBM19W6V/yhYLrmspWDmO0+Pp1nO7I+Id3QUFpb1kBfkbRky9m8r56R5KXMFss7GQo6gMBf2/lcd/qPqquXVTa2nIZcEH+HZDnmWuH7NUcRk6KN7uh0ab3HXPcRl5tzgP0xdRLECWEMZkKSbZJcBJcXBVo4TyoeRTpaUIzza/o+arWA+koZUrykb+U2lXHh8wdS88huxOliNWs6uTBcVVVQMsn3/0AsyjpmzjgSTwlAHLXLObpR3uzK/h3nekwotnP3dWolcKCPIOExZz+J8dP+G8d5+7wIZle/5Un7ePsI4A=
+    on_success: always # default: always
+    on_failure: always # default: always
+    on_start:   change # default: never
+    on_cancel:  always # default: always
+    on_error:   always # default: always
+  slack:
+    rooms:
+      - secure: PIsWcgodAdJSSTunVdIl2U2zXz+gJFvF4X4K8fMdZrd0vlvK7XtVHya2CLFZVa3q2Ao3fysl9ivau1bBZOCXZDaCKnaNJcCW1ler4wn9qaeAowRq2TCJZbg8MeIzP37b6+4x6SaVNYov0SNuBiXCN5W0GKzTmYT5GfFHPTG5LTNtssIeLjQ7RZwSx8YBv11aTmzV+dqD91L/z2d9526BdNAXjmqSDkwlwSUw+IdsHzsJkzJBgVsOhCTUNZpwOS0/oeL9e4uDxrPQNijaV9zhEN8qnNyUdtHvyHrXQS9rW1wbX3nlJwY7SpyFGEeTt21atTl6+qEOkZyQwwwgJs2nsesb++XabeHhzxlC1ZZholglZiLig9v2EuN3/YELqSw89Y7t8ucJDsXXJaJ5FvvCngUMboRxUBXDmNtlqG2qu5HHkmVwA6OlGHRcchQD9cD9+iXdv8ux/35Nyq4XzlwKcwjOLpKXzYapwkp8XMqo869klaq7gT3LRsAh9Z3gvnnGqjF25mK0/zBZyM5SKeTL07IyRtI+wqDgPaZY93T1m+UtffXCmUYTJqYTGgJ7ITTICz3r3XQd+p+lRrsCIkQC8twCi3Cn34r3TcCtm5uaFW6j7hPM2hlYT8gglJ4/N8eIv0coD1GQHaCevDmqUGxutLpzal/mdQOabIzx2ZSIoB4=  
+    on_success: always # default: always
+    on_failure: always # default: always
