@@ -4,13 +4,12 @@ notifications:
   email: false
   webhooks:
     secure: SU+WUOwpM7OudhOFwRBSklh1FKU54tiAfqRWdIBlt5oFnBZd9h9F3cU74zOYNjaEruqQpCXVbSNSLLPjNwFdhfjJ1WkA/ThMr+X65IlFYuUXdyuj6sSLvS7Xd/fhOK6COHBvXNJwKwj68sr+JFrVmgoKCaXFWkYwqUZcFoPzoVUS32rgA7nG2UKAshK9b8lBmbfudbKb1GU4y0bmaGaI47lB4/nY7z/SgrN3JSMeL+MJvRa3HKhfSq+2EkSQ95hNEmNEuLs7N/2EQcdIsnLaH+6gXcxv6OoT/v7yPtsxXosiNTIFBoOOSeTiZRVd9IVZsuqtM7x7tNZ1TpA65Wj4DZ2anDwwhAePdO2uPL9qlkvZJlQQM/LIfzvC+K5t2MzBM19W6V/yhYLrmspWDmO0+Pp1nO7I+Id3QUFpb1kBfkbRky9m8r56R5KXMFss7GQo6gMBf2/lcd/qPqquXVTa2nIZcEH+HZDnmWuH7NUcRk6KN7uh0ab3HXPcRl5tzgP0xdRLECWEMZkKSbZJcBJcXBVo4TyoeRTpaUIzza/o+arWA+koZUrykb+U2lXHh8wdS88huxOliNWs6uTBcVVVQMsn3/0AsyjpmzjgSTwlAHLXLObpR3uzK/h3nekwotnP3dWolcKCPIOExZz+J8dP+G8d5+7wIZle/5Un7ePsI4A=
-    on_success: always # default: always
-    on_failure: always # default: always
-    on_start:   change # default: never
-    on_cancel:  always # default: always
-    on_error:   always # default: always
+    on_success: always
+    on_failure: always
+    on_start: change
+    on_cancel: always
+    on_error: always
   slack:
-    rooms:
-      - secure: PIsWcgodAdJSSTunVdIl2U2zXz+gJFvF4X4K8fMdZrd0vlvK7XtVHya2CLFZVa3q2Ao3fysl9ivau1bBZOCXZDaCKnaNJcCW1ler4wn9qaeAowRq2TCJZbg8MeIzP37b6+4x6SaVNYov0SNuBiXCN5W0GKzTmYT5GfFHPTG5LTNtssIeLjQ7RZwSx8YBv11aTmzV+dqD91L/z2d9526BdNAXjmqSDkwlwSUw+IdsHzsJkzJBgVsOhCTUNZpwOS0/oeL9e4uDxrPQNijaV9zhEN8qnNyUdtHvyHrXQS9rW1wbX3nlJwY7SpyFGEeTt21atTl6+qEOkZyQwwwgJs2nsesb++XabeHhzxlC1ZZholglZiLig9v2EuN3/YELqSw89Y7t8ucJDsXXJaJ5FvvCngUMboRxUBXDmNtlqG2qu5HHkmVwA6OlGHRcchQD9cD9+iXdv8ux/35Nyq4XzlwKcwjOLpKXzYapwkp8XMqo869klaq7gT3LRsAh9Z3gvnnGqjF25mK0/zBZyM5SKeTL07IyRtI+wqDgPaZY93T1m+UtffXCmUYTJqYTGgJ7ITTICz3r3XQd+p+lRrsCIkQC8twCi3Cn34r3TcCtm5uaFW6j7hPM2hlYT8gglJ4/N8eIv0coD1GQHaCevDmqUGxutLpzal/mdQOabIzx2ZSIoB4=  
-    on_success: always # default: always
-    on_failure: always # default: always
+    secure: iggFBMbOl/BRNOHcWZ7OxYUmSOGnCN40GO5lH1Ie3yOqzG07EoMzGiGg+VtCzvBbPnX9aOkzagQAhjmehS0FA3WfhIX3neyNtuEBe5EmM/ces7ioGZEbFZna/cBiMxQVpI9UMSJs2KfQPhj20xfOhdd6t11+YDpz790lzpdCGRzLDeOdyU9bhc2RzIH4tM1Lp+keKLhyS1ee4ttrmOIsODdcWl4ckzSHnD0DFLi8CEXjKHk6qTwYbPOkM3baRxfdVh2ObtmN2LUh1BYHIYDXabLRdSC7pl5KASVmtDkuBUcc8heyE1o7Koap77keC9dqvNfjoyRBrV7N/trUulqaGLNkb0qXdcj74VY9aSsjOD1yrb6nkKHkQH2h8WDaFbEma3LlrFGAhAF6Z6LSZjKGsDiDp15BkQ/82x41nQN0Qv9fUgvWkS7WZk3GsdKYXiJ7yEHZ1exkydFJFLYyYxuy97ghBA4/FSUQRGGVngBh0bZs3rMTBigB2Ug32JZfAib/9tD2kTytNFU3d5wsmPmk4BiSCYWRMR7WJzjSFniVm6q06aCY27EuX38PqMlP8sg8V60zE5aiGomGyKqXNtmVKqINwX9S/BnfqZYO1o2nyAhx0XqxXbVHE7bKVQgjSWGasBBwoMM6YIqZVVzMwwOVx2+HmEW37MFDBXhFsCIDER0=
+    on_success: always
+    on_failure: always
