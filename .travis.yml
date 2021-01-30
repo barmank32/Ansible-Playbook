@@ -1,7 +1,9 @@
 dist: xenial
 language: bash
 after_script:
-  - notification.sh
+  - ls -l
+  - pwd
+  - ./notification.sh
 notifications:
   email: false
   slack:
