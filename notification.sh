@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# Get the token from Travis environment vars and build the bot URL:
-TRAVIS_TEST_RESULT=0
 # Use built-in Travis variables to check if all previous steps passed:
 if [ $TRAVIS_TEST_RESULT -ne 0 ]; then
     build_status="errored"
