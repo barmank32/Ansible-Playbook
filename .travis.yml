@@ -1,9 +1,10 @@
 dist: xenial
 language: bash
+env:
+  global:
+    secure: MD4tRoDQtXIZOsHV8NfLILVvYO2vMMIeMgr344LuN/qeW88YzMZKO9eukMs9bcfLfNSizYc+mUmnMM76wnLgFxgNuzxku4kGm5+jq5gORzQ7p9npSNEYIQyDVXQ3F16DFrVTzkcHm2y1fyOk8VnZCAVjK94TbSr+uu46W27r8wXiykg63ENX4BAUrfnYoO9/QxHpk2YCD3kGAyW3yBmxlOKo/xqlyOeilmdaIISRaFYzC4Sx0i3QiR1K+kcTlon6NAtS4mwrHzbmxuQRZRvegXjlzeI77C7eeiuxNY28HFK2hiY3PoSgxRyooGEaXuwYoUTRRSBN6GspjU3NUoGk8bzo+ejK0v3iKi41D1vB7G3DlJxdlY8dhO4ssYdQw5glfhS4sD+xbH1MjjehWQYHc0VkPI2/IeoJyLwD+2iP6kQqMbFtB5Dj6cxEWPXGRVGdVrZO5RHkdOLZ/6zR+E6Sq6ZaeuiSZbc4CoyLCnVbprlYjRYNGxj8Wi00VVCu+1fJkt3ER0hoby2zIn829pUcCEuyIBWncOrUQIIxhHSpeHPx7f8MS/QrMbO605cGAWMbvNDzxh244BvEaWyPTDOFK+ZqnEzgCOSeuzO4QF/FGqC5weZDzotQsebXMHBUCXREYRfx/lJjeUftmUtUbyKiTbvB4eKe6yGCYV6iqcCA5eg=
 after_script:
-  - ls -l
-  - pwd
-  - ./notification.sh
+  - "./notification.sh"
 notifications:
   email: false
   slack:

@@ -1,7 +1,6 @@
 #!/bin/sh
 
 # Get the token from Travis environment vars and build the bot URL:
-WEBHOOK_URL="https://hooks.slack.com/services/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"
 TRAVIS_TEST_RESULT=0
 # Use built-in Travis variables to check if all previous steps passed:
 if [ $TRAVIS_TEST_RESULT -ne 0 ]; then
